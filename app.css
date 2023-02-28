@@ -18,20 +18,17 @@ body {
 }
 
 .converter {
-    box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.2);
     padding: 10px 20px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    background-color: burlywood;
     color: brown;
+    position: relative;
 }
 
 .converter > .title {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    text-decoration: overline;
 }
 
 .converter > .title svg {
@@ -45,15 +42,44 @@ body {
     font-weight: 900;
 }
 
-#converterForm > div {
+#converterForm  {
+    display: flex;
+    gap: 2rem;
+}
+
+.base {
+    background-color: #cdbeaa;
+    width: 380px;
+    height: 380px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+}
+
+.base:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#converterForm > .base > div {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
 }
 
-#converterForm > div > input, #converterForm > div > select {
+#converterForm > .base > div > input, 
+#converterForm > .base > div > select {
     border: 1px solid rgb(210, 207, 207);
-    padding: 12px;
+    padding: 11px;
     color: chocolate;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -61,28 +87,71 @@ body {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     box-shadow: inset 8px 3px 15px #b1b73f66;
+    width: 235px;
 }
 
-#converterForm > button {
+#converterForm > .btnContainer {
+    background-color: #cdbeaa;
+    width: 150px;
+    height: 150px;
+    margin: 80px;
+    padding: 12px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    border-radius: 44% 56% 65% 35% / 57% 58% 42% 43%;
+}
+
+#converterForm > .btnContainer:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#converterForm > .btnContainer > button {
     width: 100%;
     color: #fff;
-    background-color: #888843;
+    background-color: #494926;
+    background-image: linear-gradient(gold, brown);
     border: none;
     padding: 10px;
-    margin: 6px 0;
+    margin: 50px 2px;
     cursor: pointer;
+    letter-spacing: 0.1em;
+    border-radius: 10px;
 }
 
-#converterForm > button:hover {
+#converterForm > .btnContainer > button:hover {
     background-color: brown;
-    color: wheat;
+    color: black;
 }
 
 #result {
+    position: absolute;
     color: black;
-    width: 100%;
-    margin: 20px 0;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
     font-weight: 900;
+    bottom: .4rem;
+    right: 100px;
+    text-align: center;
+    background: #cdbeaa;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    border-radius: 44% 56% 65% 35% / 57% 58% 42% 43%;
+}
+
+#result:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 #result.error {

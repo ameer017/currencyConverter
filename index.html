@@ -51,22 +51,27 @@
         </div>
 
         <form id="converterForm">
-            <div>
-                <label for="amount">Amount</label>
-                <input type="number" name="" id="amount" value="0">
+            <div class="base">
+                <div>
+                    <label for="amount">Amount</label>
+                    <input type="number" name="" id="amount" value="0">
+                </div>
+    
+                <div>
+                    <label for="fromCurrency">From</label>
+                    <select id="fromCurrency"></select>
+                </div>
+    
+                <div>
+                    <label for="toCurrency">To</label>
+                    <select id="toCurrency"></select>
+                </div>
             </div>
-
-            <div>
-                <label for="fromCurrency">From</label>
-                <select id="fromCurrency"></select>
+            
+            
+            <div class="btnContainer">
+                <button>Convert</button>
             </div>
-
-            <div>
-                <label for="toCurrency">To</label>
-                <select id="toCurrency"></select>
-            </div>
-
-            <button>Convert</button>
         </form>
 
 
