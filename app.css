@@ -262,12 +262,19 @@ body {
     .converter > #converterForm .base {
         width: 345px;
         height: 345px;
+        box-shadow: none;
+    }
+
+    .converter > .title {
+        margin: 3rem 0px -8rem 0px;
+        text-decoration: underline;
+        flex-direction: column;
     }
 
     #converterForm > .btnContainer {
         height: 150px;
         position: absolute;
-        left: 11rem;
+        left: 7.9rem;
         bottom: -3rem;
         background: none;
         box-shadow: none;
