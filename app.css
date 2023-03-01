@@ -158,3 +158,131 @@ body {
     color: red;
     padding: 20px;
 }
+
+/* media query for 800px */
+@media screen and (max-width: 800px) {
+
+    .converter {
+        padding: 10px;
+        color: brown;
+        position: initial;
+        
+    }
+
+    .converter > .title {
+        margin: 4rem 0;
+    }
+
+    .converter > .title svg {
+        width: 30px;
+        color: orange;
+        margin-right: 5px;
+    }
+
+    .converter > #converterForm  {
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .base {
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #converterForm > .btnContainer {
+        height: 150px;
+        margin: 150px 0px 0px 0px;
+        background: none;
+    }
+
+    #result {
+        position: initial;
+        color: black; 
+        margin: auto;
+        background: none;
+    }
+
+    #result.error {
+        color: red;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .converter {
+        padding: 20px;
+        color: brown;
+        position: initial;
+        /* border: 2px solid; */
+        position: relative;
+    }
+
+    .converter > .title {
+        margin: auto;
+    }
+
+    .converter > .title svg {
+        width: 30px;
+        color: orange;
+        margin-right: 5px;
+    }
+
+    .converter > #converterForm  {
+        display: flex;
+        position: relative;
+    }
+
+
+    #converterForm > .btnContainer {
+        height: 150px;
+        position: absolute;
+        left: 2rem;
+        bottom: -7rem;
+        background: none;
+    }
+
+    #result {
+        background: none;
+        position: initial;
+        color: black; 
+        margin-left: 167px;
+    }
+
+    #result.error {
+        color: red;
+        padding: 25px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .converter > #converterForm .base {
+        width: 345px;
+        height: 345px;
+    }
+
+    #converterForm > .btnContainer {
+        height: 150px;
+        position: absolute;
+        left: 11rem;
+        bottom: -3rem;
+        background: none;
+        box-shadow: none;
+    }
+
+
+    #result {
+        background: none;
+        position: initial;
+        color: black; 
+        margin: auto;
+    }
+
+    #result.error {
+        color: red;
+        padding: 25px;
+    }
+}
