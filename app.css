@@ -266,15 +266,20 @@ body {
     }
 
     .converter > .title {
-        margin: 3rem 0px -8rem 0px;
+        margin: 3rem 0px -5rem 0px;
         text-decoration: underline;
         flex-direction: column;
     }
 
+    #converterForm {
+        position: relative;
+    }
+
     #converterForm > .btnContainer {
-        height: 150px;
+        /* height: 150px; */
         position: absolute;
-        left: 7.9rem;
+        left: 8rem;
+        right: 8rem;
         bottom: -3rem;
         background: none;
         box-shadow: none;
