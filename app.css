@@ -201,7 +201,7 @@ body {
     .converter {
         margin-top: 3rem;
         padding: 0;
-        border: 2px solid;
+        /* border: 2px solid; */
         margin-bottom: 4rem;
     }
 
@@ -220,6 +220,7 @@ body {
     #converterForm > .btnContainer {
         width: 130px;
         height: 130px;
+        margin: 2px;
     }
 
     #result {
