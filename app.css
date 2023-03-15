@@ -211,10 +211,11 @@ body {
     }
 
     #converterForm > .base {
-        background-color: #cdbeaa;
-        width: 320px;
-        height: 400px;
-
+        background: none;
+        box-shadow: none;
+        /* width: 350px;
+        height: 350px; */
+        margin-top: -5rem;
     }
 
     #converterForm > .btnContainer {
