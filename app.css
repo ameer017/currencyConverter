@@ -221,7 +221,7 @@ body {
     #converterForm > .btnContainer {
         width: 130px;
         height: 130px;
-        margin: 2px;
+        margin: 1px 0px 0px 2rem;
     }
 
     #result {
